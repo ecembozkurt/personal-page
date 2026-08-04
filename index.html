@@ -1,413 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Ecem Bozkurt - research portfolio, projects, publications, blog, and media." />
-    <meta name="author" content="Ecem Bozkurt" />
-    <title>Ecem Bozkurt | Research Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-  </head>
-  <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark site-nav fixed-top" id="sideNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger brand-lockup" href="#page-top">
-          <span class="brand-name">Ecem Bozkurt</span>
-          <span class="brand-subtitle">Research Portfolio</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto align-items-lg-center">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#media">Media</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-          </ul>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ecem Bozkurt - research portfolio in machine learning, signal processing, and geometric learning." />
+  <meta name="author" content="Ecem Bozkurt" />
+  <title>Ecem Bozkurt | Research Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">EB</span>
+      <span class="brand-text">Ecem Bozkurt</span>
+    </a>
+    <nav class="nav">
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#blog">Blog</a>
+      <a href="#media">Media</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+      <span class="theme-icon" aria-hidden="true">☾</span>
+      <span class="theme-text">Dark mode</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">Ph.D. Candidate · University of Southern California</p>
+        <h1>Machine learning, signal processing, and geometry-driven methods for real-world data.</h1>
+        <p class="lede">I build methods for kernels, graphs, representation learning, and scientific AI, with a focus on problems where structure matters and generic models are not enough.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#publications">View publications</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-secondary" href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <div class="hero-pills">
+          <span>Graph learning</span>
+          <span>Kernel methods</span>
+          <span>Medical imaging</span>
+          <span>LLM embeddings</span>
         </div>
       </div>
-    </nav>
-
-    <main class="page-shell">
-      <section class="hero-section" id="about">
-        <div class="container hero-grid">
-          <div class="hero-copy">
-            <div class="eyebrow">PhD researcher at USC</div>
-            <h1>Ecem Bozkurt</h1>
-            <p class="hero-lead">
-              I work on signal processing, image processing, graph learning, medical imaging, and machine learning, with a particular interest in geometry-aware methods and reliable representations.
-            </p>
-            <p class="hero-text">
-              This site collects selected research, projects, publications, blog-style notes, and media in one place. It is meant to be easier to scan than a traditional CV, which is fortunate for everyone involved.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary btn-lg" href="mailto:bozkurt@usc.edu">Email</a>
-              <a class="btn btn-outline-primary btn-lg" href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="btn btn-outline-primary btn-lg" href="https://github.com/ecembozkurt" target="_blank" rel="noopener">GitHub</a>
-              <a class="btn btn-outline-primary btn-lg" href="#publications">Papers</a>
-            </div>
-            <div class="hero-tags">
-              <span class="pill">Graph ML</span>
-              <span class="pill">Kernel Methods</span>
-              <span class="pill">Medical Imaging</span>
-              <span class="pill">Computer Vision</span>
-            </div>
-          </div>
-          <div class="hero-card">
-            <img src="assets/img/profile.jpg" alt="Portrait of Ecem Bozkurt" class="hero-photo" />
-            <div class="hero-card-body">
-              <div class="hero-card-title">Current focus</div>
-              <ul class="hero-list">
-                <li>Geometry-aware graph and kernel construction</li>
-                <li>Interpretability for deep representations</li>
-                <li>Applications in signal and biomedical imaging</li>
-              </ul>
-            </div>
+      <div class="hero-card">
+        <img src="assets/img/profile.jpg" alt="Ecem Bozkurt portrait" class="profile-photo" />
+        <div class="hero-card-body">
+          <h2>Ecem Bozkurt</h2>
+          <p>Research portfolio for papers, projects, talks, and blog posts.</p>
+          <div class="quick-links">
+            <a href="mailto:bozkurt@usc.edu">Email</a>
+            <a href="#blog">Blog</a>
+            <a href="#media">Videos</a>
+            <a href="#projects">Projects</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="content-section section-soft" id="research">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Research</span>
-            <h2>What I work on</h2>
-            <p>Short version: kernels, graphs, geometry, and the annoying but useful question of what representation a model actually learns.</p>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="info-card h-100">
-                <div class="info-icon"><i class="fas fa-project-diagram"></i></div>
-                <h3>Graph learning</h3>
-                <p>Non-negative kernel graphs, sparsification, and structure-aware representations.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="info-card h-100">
-                <div class="info-icon"><i class="fas fa-wave-square"></i></div>
-                <h3>Signal processing</h3>
-                <p>Time-series modeling, EEG, and methods that respect the underlying signal geometry.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="info-card h-100">
-                <div class="info-icon"><i class="fas fa-brain"></i></div>
-                <h3>Representation learning</h3>
-                <p>Measuring what neural embeddings store, and when geometric summaries are actually useful.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-3 mb-4">
-              <div class="info-card h-100">
-                <div class="info-icon"><i class="fas fa-clinic-medical"></i></div>
-                <h3>Biomedical imaging</h3>
-                <p>MRI, MPI, and image quality questions with a practical engineering angle.</p>
-              </div>
-            </div>
-          </div>
+    <section class="section" id="research">
+      <div class="section-head">
+        <p class="eyebrow">Research</p>
+        <h2>What I work on</h2>
+      </div>
+      <div class="grid grid-4">
+        <article class="info-card"><h3>Geometry-aware learning</h3><p>Graph and kernel methods that adapt to local structure instead of assuming one fixed scale works everywhere.</p></article>
+        <article class="info-card"><h3>Representation quality</h3><p>Studying whether learned features actually encode useful geometry, stability, and interpretability.</p></article>
+        <article class="info-card"><h3>Scientific and medical AI</h3><p>Working on signal, image, and data-analysis problems where robustness matters more than leaderboard theater.</p></article>
+        <article class="info-card"><h3>LLM embeddings in structured tasks</h3><p>Using language embeddings where semantics can help organize, fuse, or label multi-source data.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head section-head-row">
+        <div>
+          <p class="eyebrow">Projects</p>
+          <h2>Featured work</h2>
         </div>
-      </section>
+        <input id="projectSearch" class="search" type="search" placeholder="Search projects or publications" />
+      </div>
+      <div class="grid grid-3" id="projectGrid">
+        <article class="content-card searchable" data-search="geometry aware graph construction adaptive spectral bandwidth control graph kernels mlsp">
+          <div class="card-top"><span class="tag">Paper + code</span><span class="meta">2026</span></div>
+          <h3>Geometry-Aware Graph Construction</h3>
+          <p class="abstract">A geometry-driven graph and kernel construction method that adapts spectral bandwidth to local structure, improving downstream inference when one global scale is too crude.</p>
+          <div class="card-links"><a href="#publications">Abstract</a><a href="#media">Talk</a><a href="#contact">Discuss</a></div>
+        </article>
+        <article class="content-card searchable" data-search="geomfuse geometry driven label fusion llm embeddings multilabel">
+          <div class="card-top"><span class="tag">Project</span><span class="meta">2026</span></div>
+          <h3>GeomFuse</h3>
+          <p class="abstract">A label-fusion pipeline that uses LLM embeddings to organize geometric context and improve multi-label completion under weak supervision.</p>
+          <div class="card-links"><a href="#publications">Details</a><a href="#blog">Blog</a><a href="#contact">Contact</a></div>
+        </article>
+        <article class="content-card searchable" data-search="non negative kernel graph time series eeg medical imaging signal processing">
+          <div class="card-top"><span class="tag">Signal</span><span class="meta">Research</span></div>
+          <h3>Non-negative Kernel Graphs</h3>
+          <p class="abstract">A line of work on kernel graph construction for time-series and signal data, including geometry-aware interpretations for neural representations and EEG-style analysis.</p>
+          <div class="card-links"><a href="#publications">Read</a><a href="#blog">Notes</a><a href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">Code</a></div>
+        </article>
+      </div>
+    </section>
 
-      <section class="content-section" id="projects">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Projects</span>
-            <h2>Selected projects</h2>
-            <p>Each project includes a short abstract and space for paper, code, demo, or notes links.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 mb-4">
-              <article class="project-card h-100">
-                <div class="project-meta">Graph learning</div>
-                <h3>Geometry-aware graph construction</h3>
-                <p>We adapt kernel bandwidth to local structure so the resulting graph reflects the intrinsic geometry of the data instead of forcing a one-size-fits-all setting.</p>
-                <div class="link-row">
-                  <a href="#publications">Paper</a>
-                  <a href="https://github.com/ecembozkurt" target="_blank" rel="noopener">Code</a>
-                  <a href="#blog">Notes</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <article class="project-card h-100">
-                <div class="project-meta">Interpretability</div>
-                <h3>NNK graph interpretation of deep networks</h3>
-                <p>We use non-negative kernel graphs to summarize penultimate-layer embeddings and study geometric properties that correlate with performance and augmentation behavior.</p>
-                <div class="link-row">
-                  <a href="#publications">Paper</a>
-                  <a href="https://github.com/ecembozkurt" target="_blank" rel="noopener">Code</a>
-                  <a href="#media">Talk</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <article class="project-card h-100">
-                <div class="project-meta">Computer vision</div>
-                <h3>Smart ad placement on videos</h3>
-                <p>We match ads to scene context using surface geometry, semantic similarity, saliency, and scene-change cues so the placement feels less like an interruption and more like an accident humans willingly pay for.</p>
-                <div class="link-row">
-                  <a href="#experience">Details</a>
-                  <a href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noopener">LinkedIn</a>
-                  <a href="#contact">Contact</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <article class="project-card h-100">
-                <div class="project-meta">Privacy and vision</div>
-                <h3>Face and license-plate anonymization</h3>
-                <p>We detect and blur sensitive regions in fisheye and 360 degree imagery using planar transforms, object detection, and segmentation to support privacy-preserving capture pipelines.</p>
-                <div class="link-row">
-                  <a href="#experience">Details</a>
-                  <a href="https://github.com/ecembozkurt" target="_blank" rel="noopener">Code</a>
-                  <a href="#media">Demo</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section class="section" id="publications">
+      <div class="section-head">
+        <p class="eyebrow">Publications</p>
+        <h2>Searchable publication cards</h2>
+      </div>
+      <div class="grid grid-2">
+        <article class="content-card searchable" data-search="geometry aware graph construction adaptive spectral bandwidth control mlsp abstract graph kernel local intrinsic dimension">
+          <div class="card-top"><span class="tag">MLSP</span><span class="meta">Accepted</span></div>
+          <h3>Geometry-Aware Graph Construction via Adaptive Spectral Bandwidth Control</h3>
+          <p class="abstract">We propose a per-node bandwidth criterion for Gaussian-kernel graph construction that matches the effective rank of the kernel to local intrinsic dimension, improving graph-based inference across multiple self-supervised encoders.</p>
+          <div class="card-links"><a href="#">PDF</a><a href="#">Code</a><a href="#blog">Blog</a></div>
+        </article>
+        <article class="content-card searchable" data-search="geomfuse geometry driven label fusion llm embeddings asilomar abstract multilabel completion">
+          <div class="card-top"><span class="tag">Asilomar</span><span class="meta">Accepted</span></div>
+          <h3>GeomFuse: Geometry-Driven Label Fusion using LLM Embeddings</h3>
+          <p class="abstract">A geometry-aware label fusion method that combines structured embeddings and language-based priors to strengthen weakly supervised completion and fusion tasks.</p>
+          <div class="card-links"><a href="#">PDF</a><a href="#">Slides</a><a href="#media">Talk</a></div>
+        </article>
+        <article class="content-card searchable" data-search="non negative kernel graphs time series eeg paper graph construction abstract">
+          <div class="card-top"><span class="tag">Signal</span><span class="meta">Paper</span></div>
+          <h3>Non-negative Kernel Graphs for Time-Series Signals</h3>
+          <p class="abstract">A framework for representing signals with sparse non-negative kernel graphs, extended to incorporate explicit delays for time-series analysis and EEG-style data.</p>
+          <div class="card-links"><a href="#">PDF</a><a href="#blog">Summary</a><a href="#contact">Questions</a></div>
+        </article>
+        <article class="content-card searchable" data-search="deep neural networks geometry polytopes kernel graph abstract representation learning">
+          <div class="card-top"><span class="tag">Theory</span><span class="meta">Paper</span></div>
+          <h3>Geometric Interpretation of Deep Features</h3>
+          <p class="abstract">An analysis of neural feature geometry using kernel graphs and polytope structures to explain when representation learning is stable, useful, or misleading.</p>
+          <div class="card-links"><a href="#">PDF</a><a href="#">Notebook</a><a href="#blog">Notes</a></div>
+        </article>
+      </div>
+    </section>
 
-      <section class="content-section section-soft" id="publications">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Publications</span>
-            <h2>Selected papers</h2>
-            <p>These are written as short summaries so the page reads like a portfolio, not a dead archive.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 mb-4">
-              <article class="publication-card h-100">
-                <div class="pub-topline">EUSIPCO 2022</div>
-                <h3>Non-Negative Kernel Graphs for Time-Varying Signals Using Visibility Graphs</h3>
-                <p>We extend the NNK framework to time-varying signals and combine it with visibility-graph structure to better capture temporal relationships in signal data.</p>
-                <a href="https://eurasip.org/Proceedings/Eusipco/Eusipco2022/pdfs/0001781.pdf" target="_blank" rel="noopener">Open paper</a>
-              </article>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <article class="publication-card h-100">
-                <div class="pub-topline">In progress</div>
-                <h3>Neighbors Tell Who You Are: Non-Negative Kernel Graph Based Interpretation of Datasets for Deep Learning</h3>
-                <p>We study how graph geometry around learned features can explain network behavior and offer practical diagnostics for representation quality.</p>
-                <a href="#contact">Request details</a>
-              </article>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <article class="publication-card h-100">
-                <div class="pub-topline">Journal</div>
-                <h3>Signal-to-Noise Ratio Optimized Image Reconstruction Technique for Magnetic Particle Imaging</h3>
-                <p>A reconstruction method for MPI that focuses on SNR and image quality, motivated by hardware and scanning constraints in biomedical imaging.</p>
-                <a href="#">Add PDF link</a>
-              </article>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <article class="publication-card h-100">
-                <div class="pub-topline">Conference</div>
-                <h3>Effects of Excitation Field Parameters on Image Quality in Magnetic Particle Imaging</h3>
-                <p>An experimental and modeling study of how scanning parameters affect MPI quality, with practical implications for safe imaging protocols.</p>
-                <a href="#">Add slides or poster</a>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section class="section" id="blog">
+      <div class="section-head">
+        <p class="eyebrow">Blog</p>
+        <h2>Markdown-friendly posts</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="content-card"><h3>Why bandwidth matters more than people admit</h3><p class="abstract">A short post on why kernel scale choice changes geometry, rank, and downstream behavior.</p><a class="inline-link" href="#">Read post</a></article>
+        <article class="content-card"><h3>From paper to website</h3><p class="abstract">How to turn one project into a paper page, blog post, talk slide, and GitHub link without making a mess.</p><a class="inline-link" href="#">Read post</a></article>
+        <article class="content-card"><h3>When LLM embeddings help structured data</h3><p class="abstract">A practical look at where language embeddings actually contribute signal in non-text problems.</p><a class="inline-link" href="#">Read post</a></article>
+      </div>
+    </section>
 
-      <section class="content-section" id="blog">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Blog</span>
-            <h2>Research notes and posts</h2>
-            <p>Useful for linking your papers to a non-academic audience, because apparently the world expects marketing now too.</p>
+    <section class="section" id="media">
+      <div class="section-head">
+        <p class="eyebrow">Media</p>
+        <h2>Embedded videos and podcast links</h2>
+      </div>
+      <div class="grid grid-2">
+        <article class="content-card media-card">
+          <div class="video-frame">
+            <iframe
+              title="YouTube embed placeholder"
+              srcdoc='<!DOCTYPE html><html><body style="margin:0;font-family:Inter,Arial,sans-serif;display:grid;place-items:center;height:100vh;background:#0f172a;color:#e2e8f0;text-align:center;padding:24px;"><div><div style="font-size:18px;font-weight:700;margin-bottom:10px;">YouTube embed slot</div><div style="opacity:.85;line-height:1.5;">Replace this iframe with your YouTube video embed URL.</div></div></body></html>'
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div class="row">
-            <div class="col-lg-4 mb-4">
-              <article class="blog-card h-100">
-                <div class="blog-tag">Research note</div>
-                <h3>Why kernel bandwidth is not a cosmetic choice</h3>
-                <p>A short explainer on how bandwidth changes the effective rank and local structure of a kernel graph.</p>
-                <div class="link-row">
-                  <a href="#">Blog post</a>
-                  <a href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noopener">Share on LinkedIn</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-lg-4 mb-4">
-              <article class="blog-card h-100">
-                <div class="blog-tag">Project update</div>
-                <h3>What I learned from NNK graphs on embeddings</h3>
-                <p>A practical summary of how graph summaries help with understanding neural feature geometry.</p>
-                <div class="link-row">
-                  <a href="#">Blog post</a>
-                  <a href="#projects">Project</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-lg-4 mb-4">
-              <article class="blog-card h-100">
-                <div class="blog-tag">Writing</div>
-                <h3>Turning conference work into a readable public page</h3>
-                <p>A guide for converting a paper, talk, or poster into something people can skim in under one minute.</p>
-                <div class="link-row">
-                  <a href="#">Blog post</a>
-                  <a href="#contact">Collaborate</a>
-                </div>
-              </article>
-            </div>
+          <h3>Conference talk</h3>
+          <p class="abstract">Embed a YouTube recording of a talk, seminar, or presentation here.</p>
+          <div class="card-links"><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a><a href="#">Transcript</a></div>
+        </article>
+        <article class="content-card media-card">
+          <div class="video-frame">
+            <iframe
+              title="Podcast or demo placeholder"
+              srcdoc='<!DOCTYPE html><html><body style="margin:0;font-family:Inter,Arial,sans-serif;display:grid;place-items:center;height:100vh;background:#0f172a;color:#e2e8f0;text-align:center;padding:24px;"><div><div style="font-size:18px;font-weight:700;margin-bottom:10px;">Podcast or demo slot</div><div style="opacity:.85;line-height:1.5;">Swap in a podcast episode, demo video, or interview embed.</div></div></body></html>'
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
           </div>
-        </div>
-      </section>
+          <h3>Podcast / demo</h3>
+          <p class="abstract">Use this space for a podcast RSS player, a demo reel, or a public interview clip.</p>
+          <div class="card-links"><a href="#">Podcast</a><a href="#">Watch</a></div>
+        </article>
+      </div>
+    </section>
 
-      <section class="content-section section-soft" id="media">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Media</span>
-            <h2>Embedded video slots and external links</h2>
-            <p>These blocks are ready for YouTube talks, podcast clips, or conference recordings.</p>
-          </div>
-          <div class="row">
-            <div class="col-lg-6 mb-4">
-              <div class="media-card h-100">
-                <div class="ratio-box">
-                  <iframe title="YouTube embed placeholder" srcdoc='<!DOCTYPE html><html><body style="margin:0;display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,#d9e2ec,#f7f5f2);font-family:Inter,Arial,sans-serif;color:#102a43;text-align:center;padding:24px;"><div><div style="font-size:18px;font-weight:700;margin-bottom:10px;">YouTube embed placeholder</div><div style="font-size:14px;line-height:1.5;max-width:320px;">Replace this block with your YouTube video embed URL when you are ready.</div></div></body></html>'></iframe>
-                </div>
-                <h3>Conference talk or explainer</h3>
-                <p>Use this area for a research presentation, short explainer, or project walkthrough.</p>
-                <div class="link-row">
-                  <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a>
-                  <a href="#">Podcast</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-              <div class="media-card h-100">
-                <div class="ratio-box">
-                  <iframe title="YouTube embed placeholder" srcdoc='<!DOCTYPE html><html><body style="margin:0;display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,#d9e2ec,#f7f5f2);font-family:Inter,Arial,sans-serif;color:#102a43;text-align:center;padding:24px;"><div><div style="font-size:18px;font-weight:700;margin-bottom:10px;">YouTube embed placeholder</div><div style="font-size:14px;line-height:1.5;max-width:320px;">Use this slot for a project demo, podcast clip, or public talk.</div></div></body></html>'></iframe>
-                </div>
-                <h3>Project demo or podcast clip</h3>
-                <p>Keep your media section compact by linking out to your channel, episode page, or streaming platform.</p>
-                <div class="link-row">
-                  <a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube channel</a>
-                  <a href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noopener">LinkedIn</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section class="section" id="experience">
+      <div class="section-head">
+        <p class="eyebrow">Background</p>
+        <h2>Experience and education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-date">2019 - present</span><div><h3>Ph.D. Candidate, USC</h3><p>Electrical Engineering, research in graph learning, signal processing, and geometric methods.</p></div></div>
+        <div class="timeline-item"><span class="timeline-date">2018 - 2019</span><div><h3>Research Engineer, Huawei</h3><p>Video understanding, ad placement, censorship, and computer vision systems.</p></div></div>
+        <div class="timeline-item"><span class="timeline-date">2015 - 2018</span><div><h3>M.S., Bilkent University</h3><p>Electrical and Electronics Engineering, with research on Magnetic Particle Imaging.</p></div></div>
+      </div>
+    </section>
 
-      <section class="content-section" id="experience">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Experience</span>
-            <h2>Work and research roles</h2>
-          </div>
-          <div class="timeline-card">
-            <div class="timeline-item">
-              <div class="timeline-date">Aug 2019 - Present</div>
-              <div>
-                <h3>Graduate Research Assistant</h3>
-                <p class="timeline-place">STACLab, Signal and Image Processing Institute, USC</p>
-                <p>Research on non-negative kernel graph construction for time-series signals and graph-based interpretation of deep neural networks.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">Feb 2018 - Aug 2019</div>
-              <div>
-                <h3>Research Engineer</h3>
-                <p class="timeline-place">Huawei Turkey R&D Center, Istanbul</p>
-                <p>Smart ad placement on videos and automated censoring of faces and license plates in fisheye or 360 degree images.</p>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-date">Feb 2015 - Jan 2018</div>
-              <div>
-                <h3>Graduate Research Assistant</h3>
-                <p class="timeline-place">SaritasLab, UMRAM, Bilkent University</p>
-                <p>Magnetic Particle Imaging studies on image quality, hardware experimentation, and reconstruction techniques.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section class="section contact-section" id="contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s keep it simple</h2>
+        <p class="lede">For collaborations, talks, or project questions, use the links below.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:bozkurt@usc.edu">Email</a>
+        <a href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#home">Back to top</a>
+      </div>
+    </section>
+  </main>
 
-      <section class="content-section section-soft" id="education">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Education</span>
-            <h2>Education</h2>
-          </div>
-          <div class="row">
-            <div class="col-lg-4 mb-4">
-              <div class="edu-card h-100">
-                <div class="timeline-date">2019 - Present</div>
-                <h3>University of Southern California</h3>
-                <p>PhD, Electrical and Computer Engineering</p>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-              <div class="edu-card h-100">
-                <div class="timeline-date">2013 - 2014</div>
-                <h3>Bilkent University</h3>
-                <p>MSc, Electrical and Electronics Engineering</p>
-              </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-              <div class="edu-card h-100">
-                <div class="timeline-date">2010 - 2014</div>
-                <h3>Bilkent University</h3>
-                <p>BS, Electrical and Electronics Engineering</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+  <footer class="footer">
+    <p>Built for GitHub Pages. Update the placeholder links, video embeds, and post titles as needed.</p>
+  </footer>
 
-      <section class="content-section" id="awards">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Awards</span>
-            <h2>Selected awards</h2>
-          </div>
-          <div class="awards-grid">
-            <div class="award-item">Fulbright Scholarship</div>
-            <div class="award-item">Huawei Turkey Future Star Award</div>
-            <div class="award-item">Best Paper and Presentation Award</div>
-            <div class="award-item">100 percent scholarship at Bilkent University</div>
-            <div class="award-item">Ranked 104th in the university entrance exam</div>
-          </div>
-        </div>
-      </section>
-
-      <section class="content-section section-soft" id="contact">
-        <div class="container">
-          <div class="section-heading">
-            <span class="section-kicker">Contact</span>
-            <h2>Get in touch</h2>
-          </div>
-          <div class="contact-card">
-            <p>bozkurt@usc.edu</p>
-            <div class="hero-actions justify-content-center">
-              <a class="btn btn-primary btn-lg" href="mailto:bozkurt@usc.edu">Email</a>
-              <a class="btn btn-outline-primary btn-lg" href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noopener">LinkedIn</a>
-              <a class="btn btn-outline-primary btn-lg" href="https://github.com/ecembozkurt" target="_blank" rel="noopener">GitHub</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+  <script src="js/scripts.js"></script>
+</body>
 </html>

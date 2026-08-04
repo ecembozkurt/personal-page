@@ -1,42 +1,38 @@
-/*!
-    * Start Bootstrap - Resume v6.0.2 (https://startbootstrap.com/theme/resume)
-    * Copyright 2013-2020 Start Bootstrap
-    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-    */
-    (function ($) {
-    "use strict"; // Start of use strict
+(function () {
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const projectSearch = document.getElementById('projectSearch');
+  const searchable = Array.from(document.querySelectorAll('.searchable'));
 
-    // Smooth scrolling using jQuery easing
-    $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
-        if (
-            location.pathname.replace(/^\//, "") ==
-                this.pathname.replace(/^\//, "") &&
-            location.hostname == this.hostname
-        ) {
-            var target = $(this.hash);
-            target = target.length
-                ? target
-                : $("[name=" + this.hash.slice(1) + "]");
-            if (target.length) {
-                $("html, body").animate(
-                    {
-                        scrollTop: target.offset().top,
-                    },
-                    1000,
-                    "easeInOutExpo"
-                );
-                return false;
-            }
-        }
-    });
+  const stored = localStorage.getItem('theme');
+  if (stored === 'dark' || stored === 'light') {
+    root.setAttribute('data-theme', stored);
+  } else {
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+  }
+  syncToggleLabel();
 
-    // Closes responsive menu when a scroll trigger link is clicked
-    $(".js-scroll-trigger").click(function () {
-        $(".navbar-collapse").collapse("hide");
-    });
+  toggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    syncToggleLabel();
+  });
 
-    // Activate scrollspy to add active class to navbar items on scroll
-    $("body").scrollspy({
-        target: "#sideNav",
+  function syncToggleLabel() {
+    const theme = root.getAttribute('data-theme');
+    toggle.querySelector('.theme-text').textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+    toggle.querySelector('.theme-icon').textContent = theme === 'dark' ? '☀' : '☾';
+  }
+
+  if (projectSearch) {
+    projectSearch.addEventListener('input', (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      searchable.forEach((card) => {
+        const text = (card.dataset.search || card.textContent || '').toLowerCase();
+        card.classList.toggle('search-hidden', q && !text.includes(q));
+      });
     });
-})(jQuery); // End of use strict
+  }
+})();
