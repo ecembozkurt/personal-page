@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Why Gaussian-kernel bandwidth selection has a useful middle regime." />
+  <meta name="author" content="Ecem Bozkurt" />
+  <title>Why Gaussian-kernel bandwidth has a useful middle | Ecem Bozkurt</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="../index.html"><span class="brand-mark">EB</span><span class="brand-text">Ecem Bozkurt</span></a><nav class="nav"><a href="../index.html#research">Research</a><a href="../index.html#projects">Projects</a><a href="../index.html#publications">Publications</a></nav><button class="theme-toggle" id="themeToggle" type="button"><span class="theme-icon">☾</span><span class="theme-text">Dark mode</span></button></header>
+  <main><article class="article"><p class="eyebrow">Research note · September 2026</p><h1>Why Gaussian-kernel bandwidth has a useful middle</h1><p class="lede">A practical intuition behind adaptive spectral bandwidth control.</p><img class="article-figure" src="../assets/img/projects/adaptive-bandwidth-visual.svg" alt="Three Gaussian kernel bandwidth regimes." />
+  <h2>The problem</h2><p>Gaussian kernels turn distances into similarities, but the bandwidth σ decides how broadly those similarities spread. Make σ very small and the kernel becomes close to the identity: most points stop seeing one another. Make σ very large and the kernel becomes nearly rank one: everything starts to look the same.</p>
+  <h2>The useful regime</h2><p>The interesting region is between those extremes. The goal of the adaptive method is to find a local scale where the number of directions visible to the kernel is consistent with the geometric complexity of the underlying neighborhood.</p>
+  <h2>How the paper operationalizes that idea</h2><p>For each node, the method combines an effective-rank measurement of the kernel matrix with an MST-based intrinsic-dimension estimate and a log-log scaling consistency term. The resulting criterion is minimized over a local bandwidth grid.</p>
+  <h2>Why this matters for learned embeddings</h2><p>Modern self-supervised encoders can produce high-dimensional embeddings with heterogeneous local geometry. A bandwidth that is reasonable in one region may be too narrow or too broad elsewhere. Local adaptation is therefore not just a parameter tweak; it changes which structure the graph actually resolves.</p>
+  <p><a class="inline-link" href="https://arxiv.org/abs/2609.03306" target="_blank" rel="noreferrer">Read the full paper on arXiv →</a></p></article></main>
+  <footer class="footer"><p><a href="../index.html">← Back to research portfolio</a></p></footer><script src="../js/scripts.js"></script>
+</body></html>
