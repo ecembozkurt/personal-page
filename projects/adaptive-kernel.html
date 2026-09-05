@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Geometry-Aware Graph Construction via Adaptive Spectral Bandwidth Control — Ecem Bozkurt and Antonio Ortega." />
+  <meta name="author" content="Ecem Bozkurt" />
+  <link rel="canonical" href="https://ecembozkurt.com/projects/adaptive-kernel.html" />
+  <title>Adaptive Spectral Bandwidth Control | Ecem Bozkurt</title>
+  <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><span class="brand-mark">EB</span><span class="brand-text">Ecem Bozkurt</span></a>
+    <nav class="nav"><a href="../index.html#research">Research</a><a href="../index.html#projects">Projects</a><a href="../index.html#publications">Publications</a><a href="../index.html#blog">Blog</a><a href="../index.html#media">Media</a></nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme"><span class="theme-icon">☾</span><span class="theme-text">Dark mode</span></button>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <p class="eyebrow">Featured research · IEEE MLSP 2026</p>
+      <h1>Geometry-Aware Graph Construction via Adaptive Spectral Bandwidth Control</h1>
+      <p class="project-authors">Ecem Bozkurt · Antonio Ortega</p>
+      <p class="lede">A local bandwidth-selection criterion for Gaussian-kernel graphs that matches spectral complexity to the intrinsic complexity of the data manifold.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="https://arxiv.org/abs/2609.03306" target="_blank" rel="noreferrer">Read on arXiv</a><a class="btn btn-secondary" href="../index.html#publications">All publications</a></div>
+    </section>
+
+    <section class="section visual-section">
+      <div class="section-head"><p class="eyebrow">Visual summary</p><h2>The bandwidth has a useful middle.</h2></div>
+      <div class="visual-card"><img src="../assets/img/projects/adaptive-bandwidth-visual.svg" alt="Three spectral bandwidth regimes: too small, informative middle regime, and too large." /></div>
+      <p class="figure-note">The key idea: very small bandwidths make the local kernel nearly identity-like, while very large bandwidths collapse it toward rank one. The target is the intermediate regime where the effective rank is consistent with local manifold complexity.</p>
+    </section>
+
+    <section class="section story-grid">
+      <article class="story-card"><p class="eyebrow">The problem</p><h2>One global σ does not fit every neighborhood.</h2><p>Gaussian-kernel graph methods depend strongly on bandwidth. At one extreme, the graph fragments because the kernel resolves spurious directions. At the other, distinct directions become indistinguishable. The challenge is to select the useful scale locally.</p></article>
+      <article class="story-card"><p class="eyebrow">The idea</p><h2>Match what the kernel sees to what the manifold contains.</h2><p>For each node, the method compares the kernel's effective rank with an MST-based local intrinsic-dimension estimate, while restricting the search to the manifold-consistent log-log scaling regime.</p></article>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Method</p><h2>Three ingredients, one criterion.</h2></div>
+      <div class="grid grid-3">
+        <article class="info-card"><h3>Effective rank</h3><p>Measures how many meaningful spectral directions the local kernel operator resolves. The target is not raw rank, but a continuous effective complexity.</p></article>
+        <article class="info-card"><h3>Local intrinsic dimension</h3><p>An MST-based estimate captures manifold complexity in the high-dimensional regime where pairwise distance ratios can become unreliable.</p></article>
+        <article class="info-card"><h3>Log-log consistency</h3><p>The search favors bandwidths inside the scaling region where kernel mass follows the expected manifold law.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Evidence</p><h2>What the experiments show.</h2></div>
+      <div class="grid grid-2">
+        <article class="content-card"><h3>Local alignment</h3><p class="abstract">Across CIFAR-100 embeddings from six self-supervised encoders, the selected bandwidth produces an effective-rank signal that aligns substantially better with dimMST than with the Levina–Bickel estimator. The paper reports Spearman correlations of 0.88–0.91 for dimMST versus 0.43–0.63 for LB across the evaluated encoders.</p></article>
+        <article class="content-card"><h3>Downstream inference</h3><p class="abstract">The adaptive bandwidth improves leave-one-out classification and label propagation over fixed-bandwidth and competing adaptive baselines, for both dense and sparse graph constructions.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head"><p class="eyebrow">Supporting visual</p><h2>Effective rank tracks local complexity.</h2></div>
+      <div class="visual-card soft"><div class="mini-plot"><div class="plot-col"><span class="plot-title">LB</span><div class="scatter scatter-left"></div></div><div class="plot-col"><span class="plot-title">dimMST</span><div class="scatter scatter-right"></div></div></div></div>
+      <p class="figure-note">The paper's second figure compares effective rank at the selected bandwidth against per-node intrinsic dimension for three encoders. The site graphic above is a visual placeholder for the published multi-panel result; the source figure and full details remain in the paper.</p>
+    </section>
+
+    <section class="section resources-section">
+      <div class="section-head"><p class="eyebrow">Resources</p><h2>Read, reproduce, present.</h2></div>
+      <div class="resource-row"><a class="resource" href="https://arxiv.org/abs/2609.03306" target="_blank" rel="noreferrer"><span>Paper</span><small>arXiv</small></a><a class="resource" href="https://arxiv.org/html/2609.03306v1" target="_blank" rel="noreferrer"><span>HTML</span><small>arXiv full text</small></a><a class="resource" href="../index.html#blog"><span>Blog</span><small>plain-language overview</small></a><a class="resource" href="../index.html#media"><span>Talks</span><small>video / poster links</small></a></div>
+    </section>
+  </main>
+  <footer class="footer"><p>© 2026 Ecem Bozkurt · <a href="https://ecembozkurt.com">ecembozkurt.com</a></p></footer>
+  <script src="../js/scripts.js"></script>
+</body>
+</html>
