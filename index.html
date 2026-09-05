@@ -1,224 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ecem Bozkurt - research portfolio in machine learning, signal processing, and geometric learning." />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ecem Bozkurt — Ph.D. candidate at USC working on machine learning, signal processing, graph learning, and geometry-aware methods." />
   <meta name="author" content="Ecem Bozkurt" />
+  <link rel="canonical" href="https://ecembozkurt.com/" />
   <title>Ecem Bozkurt | Research Portfolio</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home">
-      <span class="brand-mark">EB</span>
-      <span class="brand-text">Ecem Bozkurt</span>
-    </a>
-    <nav class="nav">
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#publications">Publications</a>
-      <a href="#blog">Blog</a>
-      <a href="#media">Media</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
-      <span class="theme-icon" aria-hidden="true">☾</span>
-      <span class="theme-text">Dark mode</span>
-    </button>
-  </header>
-
+  <header class="topbar"><a class="brand" href="#home"><span class="brand-mark">EB</span><span class="brand-text">Ecem Bozkurt</span></a><nav class="nav"><a href="#research">Research</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#blog">Blog</a><a href="#media">Media</a><a href="#contact">Contact</a></nav><button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme"><span class="theme-icon">☾</span><span class="theme-text">Dark mode</span></button></header>
   <main>
-    <section class="hero" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow">Ph.D. Candidate · University of Southern California</p>
-        <h1>Machine learning, signal processing, and geometry-driven methods for real-world data.</h1>
-        <p class="lede">I build methods for kernels, graphs, representation learning, and scientific AI, with a focus on problems where structure matters and generic models are not enough.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#publications">View publications</a>
-          <a class="btn btn-secondary" href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn btn-secondary" href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">GitHub</a>
-        </div>
-        <div class="hero-pills">
-          <span>Graph learning</span>
-          <span>Kernel methods</span>
-          <span>Medical imaging</span>
-          <span>LLM embeddings</span>
-        </div>
-      </div>
-      <div class="hero-card">
-        <img src="assets/img/profile.jpg" alt="Ecem Bozkurt portrait" class="profile-photo" />
-        <div class="hero-card-body">
-          <h2>Ecem Bozkurt</h2>
-          <p>Research portfolio for papers, projects, talks, and blog posts.</p>
-          <div class="quick-links">
-            <a href="mailto:bozkurt@usc.edu">Email</a>
-            <a href="#blog">Blog</a>
-            <a href="#media">Videos</a>
-            <a href="#projects">Projects</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="hero" id="home"><div class="hero-copy"><p class="eyebrow">Ph.D. Candidate · Electrical &amp; Computer Engineering · USC</p><h1>Geometry, learning, and signal processing for structured data.</h1><p class="lede">I develop machine learning methods that use geometry, spectral structure, and local information to make graphs, kernels, and learned representations more useful.</p><div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore research</a><a class="btn btn-secondary" href="https://arxiv.org/abs/2609.03306" target="_blank" rel="noreferrer">Latest paper</a><a class="btn btn-secondary" href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noreferrer">LinkedIn</a><a class="btn btn-secondary" href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">GitHub</a></div><div class="hero-pills"><span>Graph learning</span><span>Kernel methods</span><span>Representation geometry</span><span>Signal processing</span></div></div><div class="hero-card"><img src="assets/img/profile.jpg" alt="Ecem Bozkurt portrait" class="profile-photo"/><div class="hero-card-body"><h2>Ecem Bozkurt</h2><p>USC · Signal &amp; Image Processing Institute</p><div class="quick-links"><a href="mailto:bozkurt@usc.edu">Email</a><a href="https://ecembozkurt.com/projects/adaptive-kernel.html">Research story</a><a href="#blog">Blog</a></div></div></div></section>
 
-    <section class="section" id="research">
-      <div class="section-head">
-        <p class="eyebrow">Research</p>
-        <h2>What I work on</h2>
-      </div>
-      <div class="grid grid-4">
-        <article class="info-card"><h3>Geometry-aware learning</h3><p>Graph and kernel methods that adapt to local structure instead of assuming one fixed scale works everywhere.</p></article>
-        <article class="info-card"><h3>Representation quality</h3><p>Studying whether learned features actually encode useful geometry, stability, and interpretability.</p></article>
-        <article class="info-card"><h3>Scientific and medical AI</h3><p>Working on signal, image, and data-analysis problems where robustness matters more than leaderboard theater.</p></article>
-        <article class="info-card"><h3>LLM embeddings in structured tasks</h3><p>Using language embeddings where semantics can help organize, fuse, or label multi-source data.</p></article>
-      </div>
-    </section>
+    <section class="section" id="research"><div class="section-head"><p class="eyebrow">Research</p><h2>The thread connecting the work</h2></div><div class="research-lede"><p>Across graph learning, foundation-model embeddings, and signal analysis, the recurring question is simple: <strong>what structure is actually present in the data, and how should an algorithm adapt to it?</strong></p></div><div class="grid grid-4"><article class="info-card"><h3>Geometry-aware learning</h3><p>Local graph and kernel methods that adapt to heterogeneous density and manifold structure.</p></article><article class="info-card"><h3>Spectral structure</h3><p>Using effective rank and related spectral quantities to diagnose representation quality and graph behavior.</p></article><article class="info-card"><h3>Foundation-model embeddings</h3><p>Studying when learned embeddings preserve useful geometry for retrieval, fusion, and downstream inference.</p></article><article class="info-card"><h3>Signal &amp; image processing</h3><p>Methods grounded in physical and statistical structure, from medical imaging to time-series signals.</p></article></div></section>
 
-    <section class="section" id="projects">
-      <div class="section-head section-head-row">
-        <div>
-          <p class="eyebrow">Projects</p>
-          <h2>Featured work</h2>
-        </div>
-        <input id="projectSearch" class="search" type="search" placeholder="Search projects or publications" />
-      </div>
-      <div class="grid grid-3" id="projectGrid">
-        <article class="content-card searchable" data-search="geometry aware graph construction adaptive spectral bandwidth control graph kernels mlsp">
-          <div class="card-top"><span class="tag">Paper + code</span><span class="meta">2026</span></div>
-          <h3>Geometry-Aware Graph Construction</h3>
-          <p class="abstract">A geometry-driven graph and kernel construction method that adapts spectral bandwidth to local structure, improving downstream inference when one global scale is too crude.</p>
-          <div class="card-links"><a href="#publications">Abstract</a><a href="#media">Talk</a><a href="#contact">Discuss</a></div>
-        </article>
-        <article class="content-card searchable" data-search="geomfuse geometry driven label fusion llm embeddings multilabel">
-          <div class="card-top"><span class="tag">Project</span><span class="meta">2026</span></div>
-          <h3>GeomFuse</h3>
-          <p class="abstract">A label-fusion pipeline that uses LLM embeddings to organize geometric context and improve multi-label completion under weak supervision.</p>
-          <div class="card-links"><a href="#publications">Details</a><a href="#blog">Blog</a><a href="#contact">Contact</a></div>
-        </article>
-        <article class="content-card searchable" data-search="non negative kernel graph time series eeg medical imaging signal processing">
-          <div class="card-top"><span class="tag">Signal</span><span class="meta">Research</span></div>
-          <h3>Non-negative Kernel Graphs</h3>
-          <p class="abstract">A line of work on kernel graph construction for time-series and signal data, including geometry-aware interpretations for neural representations and EEG-style analysis.</p>
-          <div class="card-links"><a href="#publications">Read</a><a href="#blog">Notes</a><a href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">Code</a></div>
-        </article>
-      </div>
-    </section>
+    <section class="section featured-section" id="projects"><div class="section-head section-head-row"><div><p class="eyebrow">Featured research story</p><h2>Adaptive spectral bandwidth control</h2></div><a class="inline-link" href="projects/adaptive-kernel.html">View full project →</a></div><div class="featured-project"><div class="featured-visual"><img src="assets/img/projects/adaptive-bandwidth-visual.svg" alt="Visual summary of adaptive Gaussian bandwidth regimes."/></div><div class="featured-copy"><p class="tag">IEEE MLSP 2026 · with Antonio Ortega</p><h3>Finding the scale where the kernel sees the right geometry.</h3><p class="abstract">This work proposes a per-node bandwidth criterion that matches the effective rank of a Gaussian-kernel operator to local intrinsic dimension, while anchoring the search in a manifold-consistent log-log regime. On CIFAR-100 SSL embeddings from six encoders, the adaptive approach improves graph-based inference over fixed and competing adaptive bandwidth choices.</p><div class="card-links"><a href="https://arxiv.org/abs/2609.03306" target="_blank" rel="noreferrer">arXiv</a><a href="projects/adaptive-kernel.html">Research story</a><a href="blog/adaptive-kernel-bandwidth.html">Blog post</a></div></div></div></section>
 
-    <section class="section" id="publications">
-      <div class="section-head">
-        <p class="eyebrow">Publications</p>
-        <h2>Searchable publication cards</h2>
-      </div>
-      <div class="grid grid-2">
-        <article class="content-card searchable" data-search="geometry aware graph construction adaptive spectral bandwidth control mlsp abstract graph kernel local intrinsic dimension">
-          <div class="card-top"><span class="tag">MLSP</span><span class="meta">Accepted</span></div>
-          <h3>Geometry-Aware Graph Construction via Adaptive Spectral Bandwidth Control</h3>
-          <p class="abstract">We propose a per-node bandwidth criterion for Gaussian-kernel graph construction that matches the effective rank of the kernel to local intrinsic dimension, improving graph-based inference across multiple self-supervised encoders.</p>
-          <div class="card-links"><a href="#">PDF</a><a href="#">Code</a><a href="#blog">Blog</a></div>
-        </article>
-        <article class="content-card searchable" data-search="geomfuse geometry driven label fusion llm embeddings asilomar abstract multilabel completion">
-          <div class="card-top"><span class="tag">Asilomar</span><span class="meta">Accepted</span></div>
-          <h3>GeomFuse: Geometry-Driven Label Fusion using LLM Embeddings</h3>
-          <p class="abstract">A geometry-aware label fusion method that combines structured embeddings and language-based priors to strengthen weakly supervised completion and fusion tasks.</p>
-          <div class="card-links"><a href="#">PDF</a><a href="#">Slides</a><a href="#media">Talk</a></div>
-        </article>
-        <article class="content-card searchable" data-search="non negative kernel graphs time series eeg paper graph construction abstract">
-          <div class="card-top"><span class="tag">Signal</span><span class="meta">Paper</span></div>
-          <h3>Non-negative Kernel Graphs for Time-Series Signals</h3>
-          <p class="abstract">A framework for representing signals with sparse non-negative kernel graphs, extended to incorporate explicit delays for time-series analysis and EEG-style data.</p>
-          <div class="card-links"><a href="#">PDF</a><a href="#blog">Summary</a><a href="#contact">Questions</a></div>
-        </article>
-        <article class="content-card searchable" data-search="deep neural networks geometry polytopes kernel graph abstract representation learning">
-          <div class="card-top"><span class="tag">Theory</span><span class="meta">Paper</span></div>
-          <h3>Geometric Interpretation of Deep Features</h3>
-          <p class="abstract">An analysis of neural feature geometry using kernel graphs and polytope structures to explain when representation learning is stable, useful, or misleading.</p>
-          <div class="card-links"><a href="#">PDF</a><a href="#">Notebook</a><a href="#blog">Notes</a></div>
-        </article>
-      </div>
-    </section>
+    <section class="section" id="publications"><div class="section-head section-head-row"><div><p class="eyebrow">Selected publications</p><h2>Research output</h2></div><input id="projectSearch" class="search" type="search" placeholder="Search publications" aria-label="Search publications"/></div><div class="grid grid-2" id="projectGrid"><article class="content-card searchable" data-search="geometry aware graph construction adaptive spectral bandwidth control mlsp kernel intrinsic dimension"><div class="card-top"><span class="tag">IEEE MLSP 2026 · Accepted</span><span class="meta">2026</span></div><h3>Geometry-Aware Graph Construction via Adaptive Spectral Bandwidth Control</h3><p class="abstract">Per-node Gaussian bandwidth selection by matching kernel effective rank to local intrinsic dimension. Evaluated on six SSL encoders and downstream graph-based inference tasks.</p><div class="card-links"><a href="https://arxiv.org/abs/2609.03306" target="_blank" rel="noreferrer">arXiv</a><a href="projects/adaptive-kernel.html">Project page</a><a href="blog/adaptive-kernel-bandwidth.html">Blog</a></div></article><article class="content-card searchable" data-search="robust classification noisy labels geometry aware reliability foundation models cifar10 dermamnist"><div class="card-top"><span class="tag">Foundation models</span><span class="meta">2025</span></div><h3>Robust Classification under Noisy Labels: A Geometry-Aware Reliability Framework for Foundation Models</h3><p class="abstract">A geometry-aware reliability framework using local NNK neighborhoods for robust inference under label noise, evaluated on CIFAR-10 and DermaMNIST.</p><div class="card-links"><a href="https://arxiv.org/abs/2508.00202" target="_blank" rel="noreferrer">arXiv</a><a href="https://github.com/ecembozkurt/Robust-Classification-Foundation-Models" target="_blank" rel="noreferrer">Code</a></div></article><article class="content-card searchable" data-search="non negative kernel graphs time varying signals visibility graphs eusipco eeg"><div class="card-top"><span class="tag">Signal processing</span><span class="meta">EUSIPCO 2022</span></div><h3>Non-Negative Kernel Graphs for Time-Varying Signals Using Visibility Graphs</h3><p class="abstract">An NNK graph formulation for time-varying signals with explicit temporal visibility, connecting sparse graph construction with signal structure.</p><div class="card-links"><a href="#contact">Publication link</a><a href="#projects">Research context</a></div></article><article class="content-card searchable" data-search="magnetic particle imaging relaxometer signal to noise optimized reconstruction biyomut"><div class="card-top"><span class="tag">Medical imaging</span><span class="meta">2016–2017</span></div><h3>Magnetic Particle Imaging: SNR-Optimized Reconstruction &amp; Relaxometry</h3><p class="abstract">Earlier work on signal-to-noise-optimized reconstruction and excitation-field effects in magnetic particle imaging, linking physical acquisition constraints to reconstruction quality.</p><div class="card-links"><a href="#experience">Background</a><a href="#contact">Details</a></div></article></div></section>
 
-    <section class="section" id="blog">
-      <div class="section-head">
-        <p class="eyebrow">Blog</p>
-        <h2>Markdown-friendly posts</h2>
-      </div>
-      <div class="grid grid-3">
-        <article class="content-card"><h3>Why bandwidth matters more than people admit</h3><p class="abstract">A short post on why kernel scale choice changes geometry, rank, and downstream behavior.</p><a class="inline-link" href="#">Read post</a></article>
-        <article class="content-card"><h3>From paper to website</h3><p class="abstract">How to turn one project into a paper page, blog post, talk slide, and GitHub link without making a mess.</p><a class="inline-link" href="#">Read post</a></article>
-        <article class="content-card"><h3>When LLM embeddings help structured data</h3><p class="abstract">A practical look at where language embeddings actually contribute signal in non-text problems.</p><a class="inline-link" href="#">Read post</a></article>
-      </div>
-    </section>
+    <section class="section" id="blog"><div class="section-head"><p class="eyebrow">Blog</p><h2>Research, explained</h2></div><div class="grid grid-3"><article class="content-card"><p class="tag">Research note</p><h3>Why Gaussian-kernel bandwidth has a useful middle</h3><p class="abstract">An intuitive explanation of the two failure regimes and why adaptive spectral control targets the middle.</p><a class="inline-link" href="blog/adaptive-kernel-bandwidth.html">Read post →</a></article><article class="content-card"><p class="tag">Coming soon</p><h3>From paper to research story</h3><p class="abstract">How to turn a technical contribution into a clear visual, a project page, and a useful public explanation.</p><span class="inline-note">Drafting</span></article><article class="content-card"><p class="tag">Coming soon</p><h3>What graph geometry tells us about embeddings</h3><p class="abstract">Notes on local neighborhoods, kernel choice, and why representation quality is more than a single global score.</p><span class="inline-note">Drafting</span></article></div></section>
 
-    <section class="section" id="media">
-      <div class="section-head">
-        <p class="eyebrow">Media</p>
-        <h2>Embedded videos and podcast links</h2>
-      </div>
-      <div class="grid grid-2">
-        <article class="content-card media-card">
-          <div class="video-frame">
-            <iframe
-              title="YouTube embed placeholder"
-              srcdoc='<!DOCTYPE html><html><body style="margin:0;font-family:Inter,Arial,sans-serif;display:grid;place-items:center;height:100vh;background:#0f172a;color:#e2e8f0;text-align:center;padding:24px;"><div><div style="font-size:18px;font-weight:700;margin-bottom:10px;">YouTube embed slot</div><div style="opacity:.85;line-height:1.5;">Replace this iframe with your YouTube video embed URL.</div></div></body></html>'
-              loading="lazy"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <h3>Conference talk</h3>
-          <p class="abstract">Embed a YouTube recording of a talk, seminar, or presentation here.</p>
-          <div class="card-links"><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a><a href="#">Transcript</a></div>
-        </article>
-        <article class="content-card media-card">
-          <div class="video-frame">
-            <iframe
-              title="Podcast or demo placeholder"
-              srcdoc='<!DOCTYPE html><html><body style="margin:0;font-family:Inter,Arial,sans-serif;display:grid;place-items:center;height:100vh;background:#0f172a;color:#e2e8f0;text-align:center;padding:24px;"><div><div style="font-size:18px;font-weight:700;margin-bottom:10px;">Podcast or demo slot</div><div style="opacity:.85;line-height:1.5;">Swap in a podcast episode, demo video, or interview embed.</div></div></body></html>'
-              loading="lazy"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <h3>Podcast / demo</h3>
-          <p class="abstract">Use this space for a podcast RSS player, a demo reel, or a public interview clip.</p>
-          <div class="card-links"><a href="#">Podcast</a><a href="#">Watch</a></div>
-        </article>
-      </div>
-    </section>
+    <section class="section" id="media"><div class="section-head"><p class="eyebrow">Talks &amp; media</p><h2>Explain it twice: once in the paper, once for humans.</h2></div><div class="grid grid-2"><article class="content-card media-card"><div class="video-placeholder"><div><span class="video-icon">▶</span><strong>YouTube talk slot</strong><small>Drop in a real YouTube embed when the recording is live.</small></div></div><h3>Conference presentation</h3><p class="abstract">Designed for MLSP, Asilomar, seminars, and research explainers.</p><div class="card-links"><a href="https://www.youtube.com/" target="_blank" rel="noreferrer">YouTube</a><a href="#contact">Talk inquiries</a></div></article><article class="content-card media-card"><div class="podcast-placeholder"><div><span class="podcast-icon">◉</span><strong>Podcast / interview slot</strong><small>Add Spotify, Apple Podcasts, or RSS embed later.</small></div></div><h3>Podcast &amp; interviews</h3><p class="abstract">A home for longer-form conversations about research, AI, and building things.</p><div class="card-links"><a href="#contact">Invite me</a><a href="#blog">Related writing</a></div></article></div></section>
 
-    <section class="section" id="experience">
-      <div class="section-head">
-        <p class="eyebrow">Background</p>
-        <h2>Experience and education</h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item"><span class="timeline-date">2019 - present</span><div><h3>Ph.D. Candidate, USC</h3><p>Electrical Engineering, research in graph learning, signal processing, and geometric methods.</p></div></div>
-        <div class="timeline-item"><span class="timeline-date">2018 - 2019</span><div><h3>Research Engineer, Huawei</h3><p>Video understanding, ad placement, censorship, and computer vision systems.</p></div></div>
-        <div class="timeline-item"><span class="timeline-date">2015 - 2018</span><div><h3>M.S., Bilkent University</h3><p>Electrical and Electronics Engineering, with research on Magnetic Particle Imaging.</p></div></div>
-      </div>
-    </section>
+    <section class="section" id="experience"><div class="section-head"><p class="eyebrow">Background</p><h2>Experience &amp; education</h2></div><div class="timeline"><div class="timeline-item"><span class="timeline-date">Ph.D.</span><div><h3>University of Southern California</h3><p>Electrical &amp; Computer Engineering · Signal and Image Processing Institute.</p></div></div><div class="timeline-item"><span class="timeline-date">Research</span><div><h3>Machine learning, graph signal processing &amp; imaging</h3><p>Work spanning representation geometry, kernel graphs, noisy-label robustness, and medical imaging.</p></div></div><div class="timeline-item"><span class="timeline-date">Earlier</span><div><h3>Magnetic Particle Imaging</h3><p>Research on SNR-aware reconstruction and relaxometry, with peer-reviewed outputs and conference presentations.</p></div></div></div></section>
 
-    <section class="section contact-section" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s keep it simple</h2>
-        <p class="lede">For collaborations, talks, or project questions, use the links below.</p>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:bozkurt@usc.edu">Email</a>
-        <a href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#home">Back to top</a>
-      </div>
-    </section>
+    <section class="section contact-section" id="contact"><div><p class="eyebrow">Contact</p><h2>Research, collaboration, speaking.</h2><p class="lede">For research collaborations, technical conversations, talks, or project questions, reach out directly.</p></div><div class="contact-links"><a href="mailto:bozkurt@usc.edu">Email</a><a href="https://www.linkedin.com/in/ecem-bozkurt" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/ecembozkurt" target="_blank" rel="noreferrer">GitHub</a><a href="#contact" class="schedule-link">Calendly</a></div></section>
   </main>
-
-  <footer class="footer">
-    <p>Built for GitHub Pages. Update the placeholder links, video embeds, and post titles as needed.</p>
-  </footer>
-
+  <footer class="footer"><p>© 2026 Ecem Bozkurt · <a href="https://ecembozkurt.com">ecembozkurt.com</a> · Hosted on GitHub Pages.</p></footer>
   <script src="js/scripts.js"></script>
 </body>
 </html>
